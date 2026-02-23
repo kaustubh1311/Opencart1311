@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="os" value="Windows"/>
+  <parameter name="browser" value="edge"/>
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC002_AccountLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_account_login"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC002_AccountLoginTest -->
+      <class name="testCases.TC001_AccountRegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC001_AccountRegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
